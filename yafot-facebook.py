@@ -9,8 +9,8 @@ from src import logger
 
 def check_for_unresolved_error(error_counter, response, edge):
     # Try 10 times before terminating the script
-    if error_counter >= 10:
-        print("Error still unresolved after 10 tries, bot exiting")
+    if error_counter >= 5:
+        print("Error still unresolved after 5 tries, bot exiting")
         logger.log_error(f"Unresolved error at {edge}, bot exiting")
         sys.exit(1)
 
