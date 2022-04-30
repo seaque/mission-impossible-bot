@@ -10,6 +10,10 @@ def log_error(message):
 
 
 def log_posts(curren_frame, post_id, comment_id, palbum_id, calbum_id):
+    
+    named_tuple = time.localtime() # get struct_time
+    time_string = time.strftime("%d/%m/%Y %H:%M:%S", named_tuple)
+    
     with open("yafot_posts.log", "a+") as file:
         if not comment_id:
             comment_id = "null"
@@ -20,5 +24,5 @@ def log_posts(curren_frame, post_id, comment_id, palbum_id, calbum_id):
         # Post-id's will be logged in a file in csv format, without heading
         # current_frame,main_post_id,comment_id,photo_album_id,comment_album_id
         # If a value doesn't exist, "null" would be written in its place
-        file.write(f"{curren_frame},{post_id},{comment_id},{palbum_id},{calbum_id}\n")
+        file.write(f"{time_string},{curren_frame},{post_id},{comment_id},{palbum_id},{calbum_id}\n")
         file.close()

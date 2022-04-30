@@ -54,7 +54,7 @@ def post_caption():
     # Add your desired post-caption here
     # It is recommended to execute the script in dry-run mode first to check the post captions and text formats
     msg = (
-        f"Mission Impossible (1996) - "
+        f"Mission: Impossible (1996) - "
         # f"Episode 01 of 12\n"
         f"Frame {current_frame_number} of {total_frames}"
         # Comment out the following line if you aren't using timestamp
@@ -85,7 +85,7 @@ def album_post_caption(post_id):
         timestamp_msg = f" - {timestamp}"
     msg = (
         # f"Episode number - "
-        f"{current_frame_number:0{padding}}/{total_frames}"
+        f"{current_frame_number}/{total_frames}"
         # Comment out the following line if you aren't using timestamp
         f"{timestamp_msg}\n"
         f"Original post: https://www.facebook.com/{post_id}"
