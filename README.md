@@ -1,4 +1,5 @@
-# Mission Impossible Framebot made with YAFOT
+## ❗ Due to recent API changes and more than 10K pictures getting automatically deleted, this bot is discontinued.
+
 
 ![MI](https://www.seekpng.com/png/full/87-878131_impossible-is-one-of-the-many-franchises-featured.png)
 
